@@ -60,10 +60,9 @@ This project uses **Gulp** to automate frontend tasks such as:
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="screenshots/findjob.png" width="150px" />
-  <img src="screenshots/jobdesc.png" width="150px" />
-  <img src="screenshots/mobile.png" width="150px" />
-  <img src="screenshots/findfreelance.gif" width="150px" />
+  <img src="screenshots/home.png" width="150px" />
+  <img src="screenshots/login.png" width="150px" />
+  <img src="screenshots/chat.png" width="150px" />
 
 </p>
 
