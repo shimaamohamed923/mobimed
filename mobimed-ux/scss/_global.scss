@@ -1,0 +1,156 @@
+// html {
+//   font-size: 15px;
+// }
+
+body {
+  font-size: 0.9rem;
+
+  overflow-x: hidden;
+  font-family: "Poppins-Regular";
+  color: rgb(0, 0, 0);
+
+  background: linear-gradient(
+    to right,
+    rgba(111, 21, 163, 0.02) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+
+  @media (max-width: 767.9px) {
+    font-size: 0.8rem;
+  }
+}
+
+h5 {
+  @media (max-width: 767.9px) {
+    font-size: 1rem;
+  }
+}
+.main-bg {
+  background: linear-gradient(
+    to top,
+    rgba(111, 21, 163, 0.1) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
+}
+.w-meduim {
+  font-family: Poppins-Medium;
+}
+.txt-md {
+  font-size: 0.9rem;
+}
+.txt-sm {
+  font-size: 0.8rem;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.main-color {
+  color: $main-color;
+}
+.sec-color {
+  color: $secondary-color;
+}
+.c-grey {
+  color: $gray-600;
+}
+.bg-main {
+  background: $main100-color;
+}
+.rounded-15 {
+  @include border-radius(15px);
+}
+
+.mb__section {
+  margin: 6rem 0;
+  @media (max-width: 991.9px) {
+    margin: 3rem 0;
+  }
+}
+h6 {
+  @media (max-width: 575.9px) {
+    font-size: 1em;
+  }
+}
+.mb-6 {
+  margin-bottom: 4rem;
+}
+@-moz-keyframes spin {
+  100% {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+p {
+  line-height: 2em;
+}
+.search__block__mobile {
+  margin-bottom: 1rem;
+  .btn-search {
+    padding: 1rem;
+    margin: 0 auto;
+    width: 90%;
+    border: 1px solid $secondary-color;
+    @include border-radius(15px);
+    cursor: pointer;
+  }
+}
+.searchMobile {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  min-height: 100vh;
+  width: 100%;
+  background: #fff;
+  padding: 0;
+  &.open {
+    display: block;
+  }
+  .close-search {
+    position: absolute;
+    top: calc(1rem - 3px);
+    left: 1rem;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+    svg {
+      transform: scale(0.7);
+      path {
+        fill: #fff;
+      }
+    }
+  }
+  .title {
+    background: $main-color;
+    padding: 1rem;
+    color: #fff;
+  }
+  .list-filter {
+    li {
+      padding: 2rem 1rem;
+      border-bottom: 1px solid #d9d9d9;
+    }
+  }
+}

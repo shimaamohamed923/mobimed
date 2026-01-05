@@ -1,0 +1,34 @@
+//Main Style
+@import "bootstrap/functions";
+@import "customVariables";
+@import "bootstrap/bootstrap.scss";
+// @import "plugins/flexslider";
+@import "plugins/lightslider";
+// @import "plugins/hover";
+@import "plugins/animate";
+@import "plugins/slick";
+@import "plugins/slick-theme";
+@import "plugins/owl.carousel";
+@import "plugins/owl.theme.default";
+// @import "plugins/dropzone";
+// //@import "plugins/datepicker";
+// @import "plugins/example-styles";
+// @import "plugins/toastr";
+@import "plugins/bootstrap-datepicker";
+@import "plugins/intlTelInput";
+@import "plugins/lightgallery";
+@import "plugins/fileup";
+@import "plugins/choices";
+
+/* Custom */
+
+@import "functions";
+@import "global";
+@import "header";
+@import "footer";
+@import "home";
+@import "forms";
+@import "list";
+@import "item";
+@import "chat";
+@import "order";

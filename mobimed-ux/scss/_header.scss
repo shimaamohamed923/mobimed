@@ -1,0 +1,113 @@
+header {
+  padding: 1rem 0;
+  &.h-shaodw {
+    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.3);
+  }
+  .logo {
+    width: 235px;
+    @media (max-width: 1199.9px) {
+      width: 170px;
+    }
+  }
+  li {
+    display: inline-flex;
+    color: $main-color;
+    font-family: "Poppins-Bold";
+    margin: 0 0.5rem;
+    @media (min-width: 991.9px) and (max-width: 1200px) {
+      font-size: 0.9em;
+    }
+    @media (max-width: 991.9px) {
+      display: flex;
+      padding: 0.5rem 0;
+    }
+    &.chat-link {
+      @media (max-width: 991.9px) {
+        display: none !important;
+      }
+    }
+  }
+  .btn {
+    @include border-radius(25px);
+    padding: 0.5rem 2rem;
+    min-width: 125px;
+    @media (max-width: 1199.9px) {
+      padding: 0.4rem 1rem;
+    }
+  }
+  .menu {
+    @media (max-width: 991px) {
+      height: 100vh;
+      background: #fff;
+      width: 280px;
+      position: fixed;
+      top: 0;
+      right: -300px;
+      padding: 2rem 1rem;
+      transition: right 1s;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      width: 170px;
+      position: absolute;
+      left: 1rem;
+      top: 30px;
+    }
+    &.active {
+      right: 0;
+    }
+  }
+}
+
+.ar-txt {
+  font-family: "Tajawal-Bold";
+}
+.ico-sidemenu {
+  svg {
+    path {
+      fill: $main-color;
+    }
+  }
+}
+.dropdwn-country {
+  .btn-country {
+    font-family: "Poppins-Regular";
+    &:focus {
+      box-shadow: none;
+    }
+    @media (max-width: 1199.9px) {
+      padding-left: 0;
+    }
+  }
+  li {
+    font-family: "Poppins-Regular";
+  }
+}
+.overlay {
+  background: #000;
+  opacity: 0.8;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 9;
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+.icon-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  svg {
+    width: 15px;
+    path {
+      fill: $secondary-color;
+    }
+  }
+}

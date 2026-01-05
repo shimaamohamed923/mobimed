@@ -1,0 +1,268 @@
+.doctor__data {
+  .doctor__card {
+    @media (max-width: 767.9px) {
+      margin-top: 50px;
+    }
+    .img-card {
+      flex: 0 0 25%;
+      @media (max-width: 767.9px) {
+        position: absolute;
+        top: -50px;
+        left: calc(50% - 60px);
+      }
+      .doctor-img {
+        margin: 0 auto;
+      }
+    }
+    .doctor__info {
+      flex: 0 0 calc(75% - 1rem);
+      margin-left: 1rem;
+      @media (max-width: 767.9px) {
+        flex: 0 0 100%;
+        margin-top: 80px;
+        margin-left: 0;
+        padding-left: 0;
+      }
+
+      .desc {
+        max-height: 55px;
+        overflow: hidden;
+      }
+    }
+  }
+}
+.rate-md {
+  .ico-star {
+    width: 20px;
+    height: 22px;
+    margin-right: 2px;
+    @media (max-width: 575.9px) {
+      width: 15px;
+    }
+  }
+}
+.crad-w-ico {
+  .title {
+    margin-bottom: 2rem;
+    @media (max-width: 767.9px) {
+      margin-bottom: 1rem;
+    }
+    h5 {
+      margin-bottom: 0;
+    }
+  }
+  i {
+    margin-right: 1.5rem;
+    @media (max-width: 575.9px) {
+      margin-right: 0.5rem;
+    }
+
+    svg {
+      @media (max-width: 767.9px) {
+        transform: scale(0.8);
+      }
+    }
+  }
+
+  .content-card {
+    padding-left: calc(1.5rem + 30px);
+    @media (max-width: 767.9px) {
+      padding-left: 0;
+    }
+  }
+}
+.service-card {
+  .btn {
+    margin-right: 0.5rem;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+    &.service {
+      padding: 0.6rem 1rem;
+      @include border-radius(15px);
+      @media (max-width: 575.9px) {
+        padding: 0.6rem 0.8rem;
+      }
+    }
+    &.seemore {
+      @include border-radius(10px);
+    }
+  }
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    flex: 0 0 110px;
+    width: 110px;
+    height: 110px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    @media (max-width: 575.9px) {
+      width: 90px;
+      height: 90px;
+      flex: 0 0 90px;
+    }
+  }
+}
+.sticky__box {
+  position: sticky;
+  top: 10px;
+  background: #fff;
+  box-shadow: 0px 41px 71px rgba(82, 30, 129, 0.07);
+  @include border-radius(5px);
+  @media (max-width: 991.9px) {
+    position: relative;
+  }
+}
+.booking-card {
+  border: 0;
+  margin-bottom: 3rem;
+  .bookdetail {
+    padding: 1.5rem;
+    border-top: 1px solid#c7c7c7;
+    @media (max-width: 575.9px) {
+      padding: 1.5rem 0.5rem;
+    }
+    &.fess-time {
+      border-top: 0;
+    }
+    input {
+      &::placeholder {
+        font-size: 13px;
+      }
+    }
+    .doctor__slide {
+      padding: 0 3rem;
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+      @media (max-width: 1199.9px) {
+        padding: 0 2rem;
+        width: 400px;
+      }
+    }
+    .lSAction > a {
+      opacity: 1;
+      background: none;
+      &.lSNext {
+        right: 0;
+      }
+      &.lSPrev {
+        left: 0;
+      }
+    }
+    .ico-calendar {
+      width: 50px;
+      margin-right: 2rem;
+      @media (max-width: 575.9px) {
+        width: 30px;
+        margin-right: 1rem;
+      }
+    }
+    h6 {
+      @media (max-width: 575.9px) {
+        font-size: 1em;
+      }
+    }
+    .note-pay {
+      line-height: 1.8em;
+    }
+    .img-sm {
+      transform: scale(0.7);
+    }
+  }
+}
+.quote-ico {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  &.left {
+    left: 1.5rem;
+    top: 1.5rem;
+    @media (max-width: 575.9px) {
+      left: 0.5rem;
+      top: 0.5rem;
+    }
+  }
+  &.right {
+    right: 2rem;
+    bottom: 2rem;
+    @media (max-width: 575.9px) {
+      right: 0.5rem;
+      bottom: 0.5rem;
+    }
+  }
+}
+.fess-time {
+  font-size: 0.9em;
+  color: #3f2079;
+  i {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+}
+.t-card {
+  padding: 0 2rem;
+  @media (max-width: 575.9px) {
+    padding: 0 0.5rem;
+  }
+}
+.head-reviews {
+  padding: 2rem 4rem;
+  border-bottom: 1px solid #e1d8d8;
+  @media (max-width: 575.9px) {
+    padding: 1.5rem 0.5rem;
+  }
+}
+.list-reviews {
+  .review {
+    padding: 2rem 3rem;
+    border-bottom: 1px solid #e1d8d8;
+    @media (max-width: 575.9px) {
+      padding: 1.5rem 0.5rem;
+    }
+    &:last-child {
+      border-bottom: 0;
+    }
+    img {
+      @media (max-width: 767.9px) {
+        width: 15px;
+      }
+    }
+  }
+}
+.num-rate {
+  margin-bottom: 1.5rem;
+  @media (max-width: 767.9px) {
+    margin: 0.5rem 0;
+  }
+  span {
+    width: 40px;
+    height: 40px;
+    @include border-radius(10px);
+    background: $secondary-color;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.tabs-reverse {
+  margin-top: 15px;
+  .nav-tabs {
+    border-bottom: 0;
+
+    .nav-link {
+      border: 1px solid $secondary-color;
+      color: $secondary-color;
+      @include border-radius(35px);
+      width: 160px;
+    }
+  }
+  .doctors-times {
+    width: 100% !important;
+  }
+}
