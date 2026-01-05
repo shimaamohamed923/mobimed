@@ -60,7 +60,7 @@ This project uses **Gulp** to automate frontend tasks such as:
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="screenshots/home.png" width="150px" />
+  <img src="screenshots/home.jpg" width="150px" />
   <img src="screenshots/login.png" width="150px" />
   <img src="screenshots/chat.png" width="150px" />
 
