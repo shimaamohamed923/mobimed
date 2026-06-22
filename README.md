@@ -1,4 +1,4 @@
-# Project Name
+# Mobimed
 
 A social healthcare platform that connects users, doctors and service providers.
 
